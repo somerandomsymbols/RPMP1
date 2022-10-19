@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:textSize="32sp"
+        android:text="Введіть текст для кодування:"
+        android:background="#984063"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/edit_text_input"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="abracadabra"
+            android:textSize="48sp"
+            android:maxLines="1"
+            android:lines="1"
+            android:scrollbars="vertical"
+            android:layout_weight="1"
+            android:background="#FE9677" />
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Запуск"
+            android:textSize="32sp"
+            android:background="#F64668"
+            android:id="@+id/button_run"
+            android:onClick="runHuffman"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:textSize="32sp"
+        android:text="Результат:"
+        android:layout_weight="1"
+        android:background="#984063"/>
+
+    <TextView
+        android:id="@+id/text_view_output"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:textSize="48sp"
+        android:text="text "
+        android:layout_weight="7"
+        android:background="#FE9677"/>
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:textSize="32sp"
+        android:text="Гістограма частот:"
+        android:layout_weight="1"
+        android:background="#984063"/>
+
+    <ImageView
+        android:id="@+id/image_view_histogram"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:contentDescription="my_image_description" />
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:text="Розробив студент групи ТТП-41 Швець Михайло"
+        android:layout_weight="1"
+        android:background="#41436A"/>
+
+</LinearLayout>
